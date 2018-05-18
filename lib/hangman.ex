@@ -1,7 +1,5 @@
 defmodule Hangman do
-  import Inflex
+  alias Hangman.Game
 
-  def hello do
-    IO.puts Dictionary.random_word()
-  end
+  defdelegate new_game(), to: Game
 end
